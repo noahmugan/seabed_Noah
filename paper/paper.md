@@ -8,7 +8,6 @@ tags:
 authors:
   - name: Paul Kairys
     orcid: 0000-0000-0000-0000
-	# equal-contrib: true
     affiliation: "1, 2"
   - name: Noah Mugan
     # equal-contrib: true # (This is how you can denote equal contributions between multiple authors)
