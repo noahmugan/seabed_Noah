@@ -8,34 +8,30 @@ tags:
 authors:
   - name: Paul Kairys
     orcid: 0000-0000-0000-0000
-    affiliation: "1, 2, 3"
+	# equal-contrib: true
+    affiliation: "1, 2"
   - name: Noah Mugan
-    affiliation: 4
+    # equal-contrib: true # (This is how you can denote equal contributions between multiple authors)
+    affiliation: 1
   - name: Daniel P. Mark
-    affiliation: 4
+    affiliation: 1
   - name: Atlas Bailey
-    affiliation: 4
+    affiliation: 1 
   - name: Jonathan C. Marcks
-    affiliation: "5, 4, 6" 
+    affiliation: "1, 3" 
   - name: Nazar Delegan
-    affiliation: "4, 5"
+    affiliation: 1 
   - name: Jiefei Zhang
-    affiliation: "4, 5"
+    affiliation: 1 
   - name: F. Joseph Heremans
-    affiliation: "4, 5, 6" 
+    affiliation: "1, 3" 
 affiliations:
-- name: Mathematics and Computer Science Division, Argonne National Laboratory, Argonne, IL 60439 USA
+ - name: Materials Science Division, Argonne National Laboratory, Argonne, IL 60439 USA
    index: 1
  - name: Quantum Computational Science Group, Oak Ridge National Laboratory, Oak Ridge, TN 37830 USA
    index: 2
- - name: Quantum Science Center, Oak Ridge National Laboratory, Oak Ridge, TN
-   index: 3
- - name: Materials Science Division and Center for Molecular Engineering, Argonne National Laboratory, Argonne, IL 60439 USA
-   index: 4
- - name: Q-NEXT, Argonne National Laboratory, Lemont, IL
-   index: 5
  - name: Pritzker School of Molecular Engineering, University of Chicago, Chicago, IL 60637 USA
-   index: 6
+   index: 3
 date: 5 August 2024
 bibliography: paper.bib
 ---
