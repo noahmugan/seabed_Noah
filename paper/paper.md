@@ -10,7 +10,6 @@ authors:
     orcid: 0000-0000-0000-0000
     affiliation: "1, 2"
   - name: Noah Mugan
-    # equal-contrib: true # (This is how you can denote equal contributions between multiple authors)
     affiliation: 1
   - name: Daniel P. Mark
     affiliation: 1
