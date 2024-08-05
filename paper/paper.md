@@ -8,30 +8,34 @@ tags:
 authors:
   - name: Paul Kairys
     orcid: 0000-0000-0000-0000
-	# equal-contrib: true
-    affiliation: "1, 2"
+    affiliation: "1, 2, 3"
   - name: Noah Mugan
-    # equal-contrib: true # (This is how you can denote equal contributions between multiple authors)
-    affiliation: 1
+    affiliation: 4
   - name: Daniel P. Mark
-    affiliation: 1
+    affiliation: 4
   - name: Atlas Bailey
-    affiliation: 1 
+    affiliation: 4
   - name: Jonathan C. Marcks
-    affiliation: "1, 3" 
+    affiliation: "5, 4, 6" 
   - name: Nazar Delegan
-    affiliation: 1 
+    affiliation: "4, 5"
   - name: Jiefei Zhang
-    affiliation: 1 
+    affiliation: "4, 5"
   - name: F. Joseph Heremans
-    affiliation: "1, 3" 
+    affiliation: "4, 5, 6" 
 affiliations:
- - name: Materials Science Division, Argonne National Laboratory, Argonne, IL 60439 USA
+- name: Mathematics and Computer Science Division, Argonne National Laboratory, Argonne, IL 60439 USA
    index: 1
  - name: Quantum Computational Science Group, Oak Ridge National Laboratory, Oak Ridge, TN 37830 USA
    index: 2
- - name: Pritzker School of Molecular Engineering, University of Chicago, Chicago, IL 60637 USA
+ - name: Quantum Science Center, Oak Ridge National Laboratory, Oak Ridge, TN
    index: 3
+ - name: Materials Science Division and Center for Molecular Engineering, Argonne National Laboratory, Argonne, IL 60439 USA
+   index: 4
+ - name: Q-NEXT, Argonne National Laboratory, Lemont, IL
+   index: 5
+ - name: Pritzker School of Molecular Engineering, University of Chicago, Chicago, IL 60637 USA
+   index: 6
 date: 5 August 2024
 bibliography: paper.bib
 ---
@@ -73,6 +77,6 @@ For a given output, the utility function computes the expected change in Shannon
 The entropy-based utility calculation is widely applicable, and thus included as the default utility metric for SEABED. The package also easily accepts a user-defined utility function for contexts which require a more unique approach. 
 
 # Acknowledgements
-SEABED originated as a fork of OptBayesExpt and has since undergone significant deviations from the original software and structure. This work (P.K., D.P.M., N.D., J.Z., and F.J.H.) is primarily supported by LDRD funding from Argonne National Laboratory, as part of the Autonomous Discovery Initiative. We acknowledge additional support in part by the U.S. Department of Energy, Office of Science, Office of Workforce Development for Teachers and Scientists (WDTS) under the Science Undergraduate Laboratory Internships Program (N.M.), the Open Quantum Initiative (A.B.), and the Q-NEXT Quantum Center supported by the U.S. Department of Energy, Office of Science, National Quantum Information Science Research Centers (J.C.M.).
+SEABED originated as a fork of OptBayesExpt and has since undergone significant deviations from the original software and structure. This work (P.K., D.P.M., N.D., J.Z., and F.J.H.) is primarily supported by LDRD funding from Argonne National Laboratory, as part of the Autonomous Discovery Initiative. We acknowledge additional support in part by the U.S. Department of Energy, Office of Science, Office of Workforce Development for Teachers and Scientists (WDTS) under the Science Undergraduate Laboratory Internships Program (N.M.), and the Q-NEXT Quantum Center supported by the U.S. Department of Energy, Office of Science, National Quantum Information Science Research Centers (J.C.M.), including through the Open Quantum Initiative (A.B.).
 
 # References
