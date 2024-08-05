@@ -8,21 +8,21 @@ tags:
 authors:
   - name: Paul Kairys
     orcid: 0000-0000-0000-0000
-    affiliation: "1, 2"
+    affiliation: "1, 2, 3"
   - name: Noah Mugan
-    affiliation: 1
+    affiliation: 4
   - name: Daniel P. Mark
-    affiliation: 1
+    affiliation: 4
   - name: Atlas Bailey
-    affiliation: 1 
+    affiliation: 4
   - name: Jonathan C. Marcks
-    affiliation: "1, 3" 
+    affiliation: "5, 4, 6" 
   - name: Nazar Delegan
-    affiliation: 1 
+    affiliation: "4, 5"
   - name: Jiefei Zhang
-    affiliation: 1 
+    affiliation: "4, 5"
   - name: F. Joseph Heremans
-    affiliation: "1, 3, 4, 5, 6" 
+    affiliation: "4, 5, 6" 
 affiliations:
  - name: Materials and Computer Science Division, Argonne National Laboratory, Argonne, IL 60439 USA
    index: 1
