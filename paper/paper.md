@@ -60,7 +60,9 @@ SEABED aims to provide a much more generalized approach to Bayesian inference th
 
 \autoref{fig:flowchart} visualizes the typical SEABED inference process. Following the definition of a likelihood function and creation of the particle prior, the package can begin to select optimal measurements and update its particle distribution accordingly. Each Bayesian update can be completed by considering either a single data point or multiple, with multiple points increasing the accuracy of particle filtering. Scripts which utilize SEABED can also cycle between Bayesian updates and measurement selection to sequentially improve the model's utility calculations and choose the most efficient measurements.
 
-![A flowchart for typical SEABED implementation. Scripts can cycle between measurements and particle resampling up to a predefined end point.\label{fig:flowchart}](flowchart.png)
+<img src="flowchart.png" alt="A flowchart for typical SEABED implementation. Scripts can cycle between measurements and particle resampling up to a predefined end point." width="50%" />
+
+_Figure 1: A flowchart for typical SEABED implementation. Scripts can cycle between measurements and particle resampling up to a predefined end point._
 
 The utility calculation included in the SEABED package is one based on Shannon entropy. This is a method of calculating the information for a random variable with a given probability distribution [@shannon_paper]. For an input $s$, output $y$, and particle distribution $A$, the particle's Shannon entropy is calculated as
 
@@ -74,6 +76,6 @@ For a given output, the utility function computes the expected change in Shannon
 The entropy-based utility calculation is widely applicable, and thus included as the default utility metric for SEABED. The package also easily accepts a user-defined utility function for contexts which require a more unique approach. 
 
 # Acknowledgements
-Ask about acknwoledgements
+SEABED originated as a fork of OptBayesExpt and has since undergone significant deviations from the original software and structure. This work (P.K., D.P.M., N.D., J.Z. and F.J.H.) is primarily supported by LDRD funding from Argonne National Laboratory, as part of the Autonomous Discovery Initiative. We acknowledge additional support in part by the U.S. Department of Energy, Office of Science, Office of Workforce Development for Teachers and Scientists (WDTS) under the Science Undergraduate Laboratory Internships Program (N.M.), the Open Quantum Initiative (A.B.), and the Q-NEXT Quantum Center supported by the U.S. Department of Energy, Office of Science, National Quantum Information Science Research Centers (J.C.M.).
 
 # References
