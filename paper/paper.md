@@ -23,14 +23,20 @@ authors:
   - name: Jiefei Zhang
     affiliation: 1 
   - name: F. Joseph Heremans
-    affiliation: "1, 3" 
+    affiliation: "1, 3, 4, 5, 6" 
 affiliations:
- - name: Materials Science Division, Argonne National Laboratory, Argonne, IL 60439 USA
+- name: Mathematics and Computer Science Division, Argonne National Laboratory, Argonne, IL 60439 USA
    index: 1
  - name: Quantum Computational Science Group, Oak Ridge National Laboratory, Oak Ridge, TN 37830 USA
    index: 2
- - name: Pritzker School of Molecular Engineering, University of Chicago, Chicago, IL 60637 USA
+ - name: Quantum Science Center, Oak Ridge National Laboratory, Oak Ridge, TN
    index: 3
+ - name: Materials Science Division and Center for Molecular Engineering, Argonne National Laboratory, Argonne, IL 60439 USA
+   index: 4
+ - name: Q-NEXT, Argonne National Laboratory, Lemont, IL
+   index: 5
+ - name: Pritzker School of Molecular Engineering, University of Chicago, Chicago, IL 60637 USA
+   index: 6
 date: 5 August 2024
 bibliography: paper.bib
 ---
