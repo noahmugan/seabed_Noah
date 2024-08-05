@@ -12,19 +12,19 @@ authors:
     affiliation: "1, 2"
   - name: Noah Mugan
     # equal-contrib: true # (This is how you can denote equal contributions between multiple authors)
-    affiliation: "1, 4"
+    affiliation: 1
   - name: Daniel P. Mark
     affiliation: 1
   - name: Atlas Bailey
     affiliation: 1 
   - name: Jonathan C. Marcks
-    affiliation: 1 
+    affiliation: "1, 3" 
   - name: Nazar Delegan
     affiliation: 1 
   - name: Jiefei Zhang
     affiliation: 1 
   - name: F. Joseph Heremans
-    affiliation: 1 
+    affiliation: "1, 3" 
 affiliations:
  - name: Materials Science Division, Argonne National Laboratory, Argonne, IL 60439 USA
    index: 1
@@ -32,9 +32,7 @@ affiliations:
    index: 2
  - name: Pritzker School of Molecular Engineering, University of Chicago, Chicago, IL 60637 USA
    index: 3
- - name: Department of Physics, University of Texas at Austin, Austin, TX 78712, U.S.A.
-   index: 4
-date: 13 August 2017
+date: 5 August 2024
 bibliography: paper.bib
 ---
 
@@ -42,11 +40,11 @@ bibliography: paper.bib
 
 SEABED: SEquential Analysis and Bayesian Experimental Design is a Python 3 package designed to optimize the collection and interpretation of noisy experimental data. It leverages Bayesian inference to approximate the true parameters of a given model with limited information, allowing users to arrive at an answer while dramatically reducing the required amount of data. Importantly, SEABED’s particle filtering approach enables efficient parallelization of calculations via the JAX package, a library for JIT compilation of array-based computation. Sequential updates to the particle probability distribution also allow this package to adaptively select input settings with the highest utility, thereby gaining maximal information with each measurement and further improving experimental efficiency. 
 
-SEABED’s broad functionality makes it widely applicable to a variety of Python-based projects. The JAX ecosystem allows users to easily implement this package in projects involving deep learning or solving differential equations, and the flexibility of the utility metric lets users tailor this package to their individual needs. Since its release in 2023, SEABED has already found success in accelerating the characterization of solid-state defects [autodisc reference here] and shows promise for the future.
+SEABED’s broad functionality makes it widely applicable to a variety of Python-based projects. The JAX ecosystem allows users to easily implement this package in projects involving deep learning or solving differential equations, and the flexibility of the utility metric lets users tailor this package to their individual needs. Since its release in 2023, SEABED has already found success in accelerating the characterization of solid-state defects [@autodisc_paper] and shows promise for the future.
 
 # Statement of need
 
-Within the field of statistical analysis, Bayesian inference is a vital tool to approximate a quantity when direct calculation may be infeasible. After defining a parametric probability distribution for measurements of a system, a Bayesian model can determine the likelihoods of different parameter values via repeated samplings. Existing Python packages for inference typically use one of three sampling methods: Markov chain Monte Carlo (MCMC) [@mcmc_book], Hamiltonian Monte Carlo (HMC) [@hmc_paper], and particle filtering [@particle_paper]. Many of these packages also define probabilistic programming languages (PPL) such as PyMC [@pymc_paper], Pyro [@pyro_paper], TensorFlow Probability [find reference] and Turing.jl [@turing_paper]. PPLs are a high-level interface which allow for users to easily access probabilistic models. 
+Within the field of statistical analysis, Bayesian inference is a vital tool to approximate a quantity when direct calculation may be infeasible. After defining a parametric probability distribution for measurements of a system, a Bayesian model can determine the likelihoods of different parameter values via repeated samplings. Existing Python packages for inference typically use one of three sampling methods: Markov chain Monte Carlo (MCMC) [@mcmc_book], Hamiltonian Monte Carlo (HMC) [@hmc_paper], and particle filtering [@particle_paper]. Many of these packages also define probabilistic programming languages (PPL) such as PyMC [@pymc_paper], Pyro [@pyro_paper], TensorFlow Probability [@tensorflow_paper] and Turing.jl [@turing_paper]. PPLs are a high-level interface which allow for users to easily access probabilistic models. 
 
 SEABED is not a PPL, and instead provides a streamlined, lower-level approach to particle-filtering inference of arbitrary computational models. This allows increased flexibility and greater focus on the numerical building blocks. Similar to our package is Blackjax [@blackjax_paper], a library of samplers for JAX. However, Blackjax primarily focuses on MCMC and HMC inference in contrast to SEABED’s particle filtering. 
 
@@ -60,9 +58,7 @@ SEABED aims to provide a much more generalized approach to Bayesian inference th
 
 \autoref{fig:flowchart} visualizes the typical SEABED inference process. Following the definition of a likelihood function and creation of the particle prior, the package can begin to select optimal measurements and update its particle distribution accordingly. Each Bayesian update can be completed by considering either a single data point or multiple, with multiple points increasing the accuracy of particle filtering. Scripts which utilize SEABED can also cycle between Bayesian updates and measurement selection to sequentially improve the model's utility calculations and choose the most efficient measurements.
 
-<img src="flowchart.png" alt="A flowchart for typical SEABED implementation. Scripts can cycle between measurements and particle resampling up to a predefined end point." width="50%" />
-
-_Figure 1: A flowchart for typical SEABED implementation. Scripts can cycle between measurements and particle resampling up to a predefined end point._
+![A flowchart for typical SEABED implementation. Scripts can cycle between measurements and particle resampling up to a predefined end point.\label{fig:flowchart}](flowchart.png)
 
 The utility calculation included in the SEABED package is one based on Shannon entropy. This is a method of calculating the information for a random variable with a given probability distribution [@shannon_paper]. For an input $s$, output $y$, and particle distribution $A$, the particle's Shannon entropy is calculated as
 
