@@ -42,7 +42,7 @@ bibliography: paper.bib
 
 # Summary
 
-SEABED: SEquential Analysis and Bayesian Experimental Design is a Python 3 package designed to optimize the collection and interpretation of noisy experimental data. It leverages Bayesian inference to approximate the true parameters of a given model with limited information, allowing users to arrive at an answer while dramatically reducing the required amount of data. Importantly, SEABED’s particle filtering approach enables efficient parallelization of calculations via the JAX package, a library for just-in-time (JIT) compilation of array-based computation. Sequential updates to the particle probability distribution also allow this package to adaptively select input settings with the highest utility, thereby gaining maximal information with each measurement and further improving experimental efficiency. 
+SEABED: SEquential Analysis and Bayesian Experimental Design is a Python 3 package designed to optimize the collection and interpretation of noisy experimental data. It leverages Bayesian inference to approximate the true parameters of a given model with limited information, allowing users to arrive at statistically valid measurements while dramatically reducing the required experiments. Importantly, SEABED’s particle filtering approach enables efficient parallelization of calculations via the JAX package, a library for just-in-time (JIT) compilation of array-based computation. Sequential updates to the particle probability distribution also allow this package to adaptively select input settings with the highest utility, thereby gaining maximal information with each measurement and further improving experimental efficiency. 
 
 SEABED’s broad functionality makes it widely applicable to a variety of Python-based projects. The JAX ecosystem lets users easily implement this package in projects involving deep learning or solving differential equations, and the flexibility of the utility metric means it can be tailored to a project's individual needs. Since its release in 2023, SEABED has already found success in accelerating the characterization of solid-state defects [@autodisc_paper] and shows promise for future implementations.
 
@@ -65,7 +65,7 @@ SEABED aims to provide a much more generalized approach to Bayesian inference th
 
 ![A flowchart for typical SEABED implementation. Scripts can cycle between measurements and particle resampling up to a predefined end point.\label{fig:flowchart}](flowchart.png)
 
-The utility calculation included in the SEABED package is one based on Shannon entropy. This is a method of calculating the information for a random variable with a given probability distribution [@shannon_paper]. For an input $s$, output $y$, and particle distribution $A$, the particle's Shannon entropy is calculated as
+The utility calculation included in the SEABED package is one based on Shannon entropy [@shannon_paper]. This is a method of calculating the information for a random variable with a given probability distribution. For an input $s$, output $y$, and particle distribution $A$, the particle's Shannon entropy is calculated as
 
 \begin{equation}
     H(s, y, A) = -\sum_{\vec{\alpha}\in A}P(y|s, \vec{\alpha})\log[P(y|s, \vec{\alpha})],
