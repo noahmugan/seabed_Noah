@@ -9,30 +9,30 @@ authors:
   - name: Paul Kairys
     orcid: 0000-0002-9203-9513
     email: kairyspm@ornl.gov
-    affiliation: "1,5"
+    affiliation: "1,2"
   - name: Noah Mugan
-    affiliation: 4
+    affiliation: 3
   - name: Daniel P. Mark
-    affiliation: 4
+    affiliation: 3
   - name: Atlas Bailey
-    affiliation: 4
+    affiliation: 3
   - name: Jonathan C. Marcks
-    affiliation: "5, 4, 6" 
+    affiliation: "2, 3, 4" 
   - name: Nazar Delegan
-    affiliation: "4, 5"
+    affiliation: "3, 2"
   - name: Jiefei Zhang
-    affiliation: "4, 5"
+    affiliation: "3, 2"
   - name: F. Joseph Heremans
-    affiliation: "4, 5, 6" 
+    affiliation: "3, 2, 4" 
 affiliations:
  - name: Mathematics and Computer Science Division, Argonne National Laboratory, Argonne, IL 60439 USA
    index: 1
  - name: Materials Science Division, Argonne National Laboratory, Argonne, IL 60439 USA
-   index: 4
+   index: 3
  - name: Q-NEXT, Argonne National Laboratory, Argonne, IL 60439 USA
-   index: 5
+   index: 2
  - name: Pritzker School of Molecular Engineering, University of Chicago, Chicago, IL 60637 USA
-   index: 6
+   index: 4
 date: 5 August 2024
 bibliography: paper.bib
 ---
