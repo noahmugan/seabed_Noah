@@ -27,10 +27,10 @@ authors:
 affiliations:
  - name: Mathematics and Computer Science Division, Argonne National Laboratory, Argonne, IL 60439 USA
    index: 1
- - name: Materials Science Division, Argonne National Laboratory, Argonne, IL 60439 USA
-   index: 3
  - name: Q-NEXT, Argonne National Laboratory, Argonne, IL 60439 USA
    index: 2
+ - name: Materials Science Division, Argonne National Laboratory, Argonne, IL 60439 USA
+   index: 3
  - name: Pritzker School of Molecular Engineering, University of Chicago, Chicago, IL 60637 USA
    index: 4
 date: 5 August 2024
